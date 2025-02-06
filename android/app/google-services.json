@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "218764459476",
+    "project_id": "learned-vortex-438615-j5",
+    "storage_bucket": "learned-vortex-438615-j5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218764459476:android:5ad326a300a8d697dcaa41",
+        "android_client_info": {
+          "package_name": "com.example.internship_task_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_z8Sa0woQZQ_P5FFl8VFLtBJbJqAzpsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
