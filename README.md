@@ -42,32 +42,6 @@ lib/
 ├── utils/
 │   ├── firebase_auth_helper.dart  # Firebase Helper
 
-🔧 Setup & Installation
-
-Clone the Repository
-
-git clone https://github.com/yourusername/your-repository.git
-
-Navigate to the Project Directory
-
-cd your-repository
-
-Install Dependencies
-
-flutter pub get
-
-Set Up Firebase
-
-Create a Firebase project.
-
-Enable Authentication (Email/Password).
-
-Download and add google-services.json (for Android) & GoogleService-Info.plist (for iOS).
-
-Run the App
-
-flutter run
-
 📜 Usage
 
 Sign Up with email & password.
