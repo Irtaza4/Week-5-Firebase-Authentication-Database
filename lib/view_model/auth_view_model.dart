@@ -25,7 +25,7 @@ class AuthViewModel with  ChangeNotifier{
       notifyListeners();
     });
   }
- Future<void>signUp(String  name, String  email,  String  password)async{
+ Future<bool>signUp(String  name, String  email,  String  password)async{
   try{
     UserCredential userCredential  = await _auth.createUserWithEmailAndPassword(
         email: email,
@@ -38,19 +38,31 @@ class AuthViewModel with  ChangeNotifier{
     await _userRepository.saveData(newUser);
     _userModel  = newUser;
     notifyListeners();
+    return true;
     }
   }catch(e){
     print('SignUp Error $e');
+    return false;
   }
+  return false;
   }
-  Future<void>login(String email, String  password)async{
-    UserCredential  userCredential  = await _auth.signInWithEmailAndPassword(
-        email: email, password: password);
-    User?  user  = userCredential.user;
-    if(user!=null){
-      fetchUserData(user.uid);
+  Future<bool> login(String email, String password) async {
+    try {
+      UserCredential userCredential = await _auth.signInWithEmailAndPassword(
+        email: email,
+        password: password,
+      );
+      User? user = userCredential.user;
+      if (user != null) {
+        await fetchUserData(user.uid);
+        return true;
+      }
+    } catch (e) {
+      print('Login Error: $e');
     }
+    return false;
   }
+
   Future<void>logout()async{
     await _auth.signOut();
     _firebaseUser=null;

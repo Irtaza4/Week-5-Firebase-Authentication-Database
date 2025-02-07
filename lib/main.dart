@@ -21,8 +21,13 @@ class MyApp extends StatelessWidget {
     ],
     child: MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-
+        appBarTheme: AppBarTheme(
+          color: Colors.blueAccent,
+          centerTitle: true,
+          titleTextStyle: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 25)
+        )
       ),
       home: LoginView(),
     ) ,
