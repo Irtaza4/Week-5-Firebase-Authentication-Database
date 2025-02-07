@@ -1,16 +1,105 @@
-# internship_task_firebase
+Internship Task - Firebase Authentication (Flutter)
 
-A new Flutter project.
+📌 Overview
 
-## Getting Started
+This Flutter project demonstrates user authentication using Firebase Authentication with Provider (MVVM Architecture). It includes Signup, Login, and Profile screens with proper validation and state management.
 
-This project is a starting point for a Flutter application.
+🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+🔐 User Signup & Login using Firebase Authentication
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+✅ Form Validation for user input
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+📜 State Management using Provider
+
+🛠 MVVM Architecture for clean code structure
+
+🎨 Modern UI with Material Design
+
+
+
+🛠 Tech Stack
+
+Flutter (Dart)
+
+Firebase Authentication
+
+Provider (State Management)
+
+📂 Project Structure
+
+lib/
+│── main.dart                   # Entry Point
+│
+├── view/
+│   ├── login_view.dart         # Login Screen
+│   ├── signup_view.dart        # Signup Screen
+│   ├── profile_view.dart       # Profile Screen
+│
+├── view_model/
+│   ├── auth_view_model.dart    # Authentication Logic
+│
+├── utils/
+│   ├── firebase_auth_helper.dart  # Firebase Helper
+
+🔧 Setup & Installation
+
+Clone the Repository
+
+git clone https://github.com/yourusername/your-repository.git
+
+Navigate to the Project Directory
+
+cd your-repository
+
+Install Dependencies
+
+flutter pub get
+
+Set Up Firebase
+
+Create a Firebase project.
+
+Enable Authentication (Email/Password).
+
+Download and add google-services.json (for Android) & GoogleService-Info.plist (for iOS).
+
+Run the App
+
+flutter run
+
+📜 Usage
+
+Sign Up with email & password.
+
+Login using registered credentials.
+
+Navigate to the profile screen after authentication.
+
+🔥 Dependencies
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.5
+  firebase_core: ^2.14.0
+  firebase_auth: ^4.6.3
+
+🛠 Contributing
+
+Fork the repository.
+
+Create a new branch (feature-branch).
+
+Commit your changes.
+
+Push to the branch.
+
+Open a Pull Request.
+
+📄 License
+
+This project is MIT Licensed. Feel free to use and modify it.
+
+⭐ Star the repository if you found it helpful!
+
